@@ -48,7 +48,7 @@ get "/insta" do
     require "instagram"
     @title = "Instagram"
     @description = "Instagram Photos from Tricia Surber."
-    @works = "active"
+    @insta = "active"
     
     Instagram.configure do |config|
         config.client_id = "39d76c6f03754985a71b4011bc50a898"
