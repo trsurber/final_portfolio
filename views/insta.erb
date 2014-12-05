@@ -1,0 +1,27 @@
+<div class="section">
+        <div class="container">
+
+
+            <div class="row main-low-margin">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <h1><center>Instagram Photos from Tricia Surber</center></h1>
+                    <h5><center>These are Tricia's most recent instagram photos. These photos were taken in various different places ranging from Mercer University in Macon, Baltimore, Annapolis, Nashville, Alpharetta, Jacksonville, Savannah, and Anna Maria Island.</center></h5>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+<br>
+<br>
+
+<div class="container">
+    <div class-"row centered mt mb">
+        <div class="col-lg-8 col-lg-offset-2">
+                    <center><% @photos.each do |photo| %>
+                        <img src="<%= photo.images.thumbnail.url %>" />
+                    <% end %></center>
+        </div>
+    </div>
+</div>

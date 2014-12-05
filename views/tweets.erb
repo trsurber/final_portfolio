@@ -1,0 +1,31 @@
+<div class="section">
+        <div class="container">
+
+
+            <div class="row main-low-margin">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <h1><center>Tweets Tricia Was Tagged In</center></h1>
+                    <h5><center>These are the tweets that Tricia Surber has been tagged in over the last few days.</center></h5>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+<br>
+<br>
+
+
+<div class="container">
+		<div class="row centered mt mb">
+			<div class="col-lg-8 col-lg-offset-2">
+                <% @search_results.each do |tweet| %>
+                <p><%= tweet.retweet_count %>: <a href=""><%= tweet.user.screen_name %></a> <%= tweet.text %></p> 
+                <% end %>
+            </div>
+
+		</div><!--/row -->
+	</div><!--/container -->
+
+<!--have to install "gem install twitter" -->
