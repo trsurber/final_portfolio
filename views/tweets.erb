@@ -23,6 +23,7 @@
                 <% @search_results.each do |tweet| %>
                 <p><%= tweet.retweet_count %>: <a href=""><%= tweet.user.screen_name %></a> <%= tweet.text %></p> 
                 <% end %>
+                <p>**The number to the left of the tweet denotes the number of retweets that the tweet received.</p>
             </div>
 
 		</div><!--/row -->
